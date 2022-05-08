@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" href="../css/style.css">
+    <title>SIDAK | Penerimaan</title>
+  </head>
+  <style>
+    .banner {
+  height: 80vh;
+  background-image: url(../img/navbar2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+  </style>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand fs-1 fw-bold" href="../index.html">SIDAK</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item ms-5 mx-3">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="../bimkemas/bimkemas.html">Pembinaan</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="../perawatan/perawatan.html">Perawatan</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="penerimaan.html">Penerimaan</a>
+            </li>
+          </ul>
+          <form class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+              <img src="../logo1.png" alt="Avatar" width="40" class="rounded-pill img-thumbnail">
+              LPKA Ternate
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Ubah Password</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir Navbar -->
+
+    <div class="container-fluid banner">
+      <div class="container banner-content">
+        <div>
+          <h5 class="text-sm-start mt-4">PENERIMAAN - SISTEM INFORMASI DATA ANAK </h5>
+          <p> Selamat Datang Di Sistem Informasi Data Anak LPKA Kelas II Ternate <br>
+            Proses penerimaan di LPKA meliputi penerimaan, pemeriksaan 
+            badan, pemeriksaan kesehatan dan penandatanganan Berita Acara 
+            Penerimaan Anak. Penerimaan Anak di LPKA wajib didasarkan pada 
+            surat dan dokumen yang sah.
+          </p>
+        </div>
+      </div>
+
+    <!-- card -->
+    <div class="container card">
+      <div class="container-bimkes">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/3.jpeg" class="d-block w-100" style="height: 450px;">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Petugas Layanan Kunjungan</h5>
+                <p>Proses Penerimaan Kunjungan Disabilitas</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/bg-1.jpg" class="d-block w-100" style="height: 450px;">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Alur Proses Pengusulan</h5>
+                <!-- <p>Cuti Menjelang Bebas Tindak Pidana Umum/Khusus Secara Online,Cuti Bersyarat
+                  Tindak Pidana Umum/Khusus Secara Online</p> -->
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/bg-2.jpg" class="d-block w-100 " style="height: 450px;">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Alur Proses Pengusulan</h5>
+                <!-- <p>Some representative placeholder content for the third slide.</p> -->
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container card mt-4">
+      <div class="container-bimkes">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-header fw-bold fs-5">
+                Tahanan Kepolisian AI
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Berkas Penerimaan Anak Baru</h5>
+                <ol class="card-text" type="1">
+                  <li>Surat perintah Penahanan (SPHAN/T-4)</li>
+                  <li>Berita Acara Penahanan</li>
+                  <li>Perpanjangan Penahanan (apabila ada)</li>
+                  <li>Berita Acara Perpanjangan (apabila ada)</li>
+                  <li>Penangguhan Penahanan (apabila ada)</li>
+                  <li>Berita Acara Penangguhan (apabila ada)</li>
+                  <li>Surat Keterangan Sehat dari Dokter</li>
+                  <li>Rapid Test/SWAB (selama masa covid-19)</li>
+                  <li>Surat Pemindahan/Mutasi dari UPT lain (apabila mutasi)</li>
+                  <li>Berita Acara Pemindahan/Mutasi dari UPT lain</li>
+                </ol>
+                <a href="kepolisian.html" class="btn btn-primary">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-header fw-bold fs-5">
+                Tahanan Kejaksaan AII
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Berkas Penerimaan Anak Baru</h5>
+                <ol class="card-text" type="1">
+                  <li>Surat perintah Penahanan (SPHAN/T-7)</li>
+                  <li>Berita Acara Penahanan (BA-7)</li>
+                  <li>Perpanjangan Penahanan (apabila ada)</li>
+                  <li>Berita Acara Perpanjangan (apabila ada)</li>
+                  <li>Surat Keterangan Sehat dari Dokter</li>
+                  <li>Rapid Test/SWAB (selama masa covid-19)</li>
+                  <li>Surat Pemindahan/Mutasi dari UPT lain (apabila mutasi)</li>
+                  <li>Berita Acara Pemindahan/Mutasi dari UPT lain</li>
+                </ol>
+                <a href="kejaksaan.html" class="btn btn-primary">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mt-4">
+            <div class="card">
+              <div class="card-header fw-bold fs-5">
+                Tahanan Pengadilan AIII
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Berkas Penerimaan Anak Baru</h5>
+                <ol class="card-text" type="1">
+                  <li>Surat Penetapan/Penahanan Selama 10 Hari</li>
+                  <li>Berita Acara Penetapan (BA-15)</li>
+                  <li>Surat Perpanjangan Penetapan/Penahanan Selama 15 Hari</li>
+                  <li>Berita Acara Perpanjangan Penetapan Selama 15 Hari</li>
+                  <li>Surat Keterangan Sehat dari Dokter</li>
+                  <li>Rapid Test/SWAB (selama masa covid-19)</li>
+                  <li>Surat Pemindahan/Mutasi dari UPT lain (apabila mutasi)</li>
+                  <li>Berita Acara Pemindahan/Mutasi dari UPT lain</li>
+                </ol>
+                <a href="pengadilan.html" class="btn btn-primary">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mt-4">
+            <div class="card">
+              <div class="card-header fw-bold fs-5">
+                Eksekusi
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Berkas Penerimaan Anak Baru</h5>
+                <ol class="card-text" type="1">
+                  <li>Petikan Putusan Pengadilan Negeri</li>
+                  <li>Petikan Putusan Pengadilan Tinggi (apabila ybs. banding)</li>
+                  <li>Berita Acara Petikan Putusan Pengadilan (BA-17)</li>
+                  <li>Surat Pelaksanaan Putusan Pengadilan (P-48)</li>
+                  <li>Surat Keterangan Sehat dari Dokter</li>
+                  <li>Rapid Test/SWAB (selama masa covid-19)</li>
+                  <li>Surat Pemindahan/Mutasi dari UPT lain (apabila mutasi)</li>
+                  <li>Berita Acara Pemindahan/Mutasi dari UPT lain</li>
+                </ol>
+                <a href="eksekusi.html" class="btn btn-primary">View Details</a>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- akhir card -->
+
+      <!-- footer -->
+        <footer class="footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-6">
+                      2022 &copy; Lpka Ternate
+                  </div>
+                  <div class="col-sm-6"> 
+                      <div class="text-sm-end d-none d-sm-block">
+                          Crafted by Hasanudin.r
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+<!-- akhir footer -->
+      
+    
+      
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="../assets/demo/chart-area-demo.js"></script>
+    <script src="../assets/demo/chart-bar-demo.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.js"></script>
+    <script src="../assets/demo/datatables-demo.js"></script>
+    <script src="../assets/demo/chart-pie-demo.js"></script>
+  </body>
+  
+</html>

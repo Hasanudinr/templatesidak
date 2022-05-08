@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" href="../css/style.css">
+    <title>SIDAK | Kesehatan</title>
+  </head>
+  <style>
+    .banner {
+  height: 80vh;
+  background-image: url(../img/navbar2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+  </style>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand fs-1 fw-bold" href="../index.html">SIDAK</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item ms-5 mx-3">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="../bimkemas/bimkemas.html">Pembinaan</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="perawatan.html">Perawatan</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="../penerimaan/penerimaan.html">Penerimaan</a>
+            </li>
+          </ul>
+          <form class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+              <img src="../logo1.png" alt="Avatar" width="40" class="rounded-pill img-thumbnail">
+              LPKA Ternate
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Ubah Password</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir Navbar -->
+
+    <div class="container-fluid banner">
+      <div class="container banner-content">
+        <div>
+          <h5 class="text-sm-start mt-4">LAYANAN KESEHATAN - SISTEM INFORMASI DATA ANAK </h5>
+          <p> Selamat Datang Di Sistem Informasi Data Anak LPKA Kelas II Ternate <br>
+            Berdasarkan lingkupnya, pemeriksaan kesehatan Anak meliputi 
+            pemeriksanaan kesehatan awal, pemeriksaan rutin selama berada di 
+            LPKA, pemeriksaan kesehatan Anak yang akan bebas, pemeriksaan 
+            kesehatan Anak yang akan keluar untuk kepentingan tertentu, dan 
+            pemeriksaan kesehatan terhadap Anak yang meninggal dunia.
+          </p>
+        </div>
+      </div>
+
+    <!-- card -->
+
+    <div class="container card">
+      <div class="container-bimkes">
+        <div class="row">
+          <p class="fs-4 text-center">DOKUMENTASI PEMERIKSAAN KESEHATAN</p>
+          <hr />
+          <!-- slide 1 -->
+          <div class="col-sm-6" style="padding-block: 10px">
+            <div id="kesehatan1" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#kesehatan1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#kesehatan1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#kesehatan1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/25.jpg" class="d-block w-100" style="height: 350px" />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Pemeriksaan Kesehatan</h5>
+                    <p>Petugas Kesehatan memeriksa andikpas sesuai dengan keluhan andikpas</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/26.jpg" class="d-block w-100" style="height: 350px" />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Pemeriksaan Kesehatan</h5>
+                    <p>Petugas Kesehatan memeriksa andikpas sesuai dengan keluhan andikpas</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/27.jpg" class="d-block w-100" style="height: 350px" />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Pemeriksaan Kesehatan</h5>
+                    <p>Petugas Kesehatan memeriksa andikpas sesuai dengan keluhan andikpas</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#kesehatan1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#kesehatan1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <!-- akhir slide 1 -->
+
+          <!-- slide 2 -->
+          <div class="col-sm-6" style="padding-block: 10px">
+            <div id="penerimaan" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#penerimaan" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#penerimaan" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#penerimaan" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/28.jpg" class="d-block w-100" style="height: 350px" />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Pemeriksaan Kesehatan</h5>
+                    <p>Petugas Kesehatan memeriksa andikpas sesuai dengan keluhan andikpas</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/29.jpeg" class="d-block w-100" style="height: 350px" />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Pemeriksaan Kesehatan</h5>
+                    <p>Petugas Kesehatan memeriksa andikpas sesuai dengan keluhan andikpas</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/30.jpeg" class="d-block w-100" style="height: 350px" />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Pemeriksaan Kesehatan</h5>
+                    <p>Petugas Kesehatan memeriksa andikpas sesuai dengan keluhan andikpas</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#penerimaan" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#penerimaan" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <!-- akhir slide 2 -->
+        </div>
+    
+        <!-- tombol tambah -->
+        <div class="container mt-4">
+          <div class="row">
+            <div class="col-sm-6">
+              <a class="btn btn-success btn-md-ms-1" href="ba_pemeriksaan.html" role="button">Berita Acara Pemeriksaan</a>
+            </div>
+            <div class="col-sm-6 text-md-end">
+              <a class="btn btn-primary btn-md my-1" href="form_pemeriksaan.html" role="button">Tambah</a>
+            <a class="btn btn-danger btn-md my-1" href="perawatan.html" role="button">Kembali</a>
+            </div>
+         </div>
+        </div>
+        <!-- akhir tombol tambah -->
+
+        <!-- tabel pemeriksaan -->
+        <div class="card mb-6" style="margin-top: 10px;">
+          <div class="card-header">
+            <i class="fas fa-table mr-1"></i>
+            Data Pemeriksaan Awal Andikpas
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-hover" id="dataTable" width="100%" cellspacing="0">
+                <thead style="text-align: center;">
+                  <tr>
+                    <th>No</th>
+                    <th>Foto</th>
+                    <th>Nama</th>
+                    <th>Tanggal Lahir</th>
+                    <th>Umur</th>
+                    <th>Alamat</th>
+                    <th>Diagnosa</th>
+                    <th>Aksi</th>
+                  </tr>
+                </thead>
+                <tbody style="text-align: center;">
+                  <tr>
+                    <td>1</td>
+                    <td><img src="img/31.jpg" style="width: 85px;"></td>
+                    <td>Feri Pieter Drunyi</td>
+                    <td>25 Maret 2000</td>
+                    <td>22</td>
+                    <td>Jl. Hasan Senen no.1 Kel. Muhajirin</td>
+                    <td>Keadaan Umum Andikpas Normal</td>
+                    <td>                  
+                    <div class="d-md-block mb-3 text-center">
+                      <a class="btn btn-primary btn-sm my-1" href="detail_kesehatan.html" role="button">Detail</a><br>
+                      <a class="btn btn-primary btn-sm my-1" href="ubah_kesehatan.html" role="button">Ubah</a><br>
+                      <a class="btn btn-primary btn-sm my-1" href="unduh_kesehatan.html" role="button">Unduh</a><br>
+                    </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- akhir tabel -->
+
+        <!--  -->
+      </div>
+      
+    </div>
+    
+
+    <!-- akhir card -->
+
+      <!-- footer -->
+        <footer class="footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-6">
+                      2022 &copy; Lpka Ternate
+                  </div>
+                  <div class="col-sm-6"> 
+                      <div class="text-sm-end d-none d-sm-block">
+                          Crafted by Hasanudin.r
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+<!-- akhir footer -->
+      
+    
+      
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="../assets/demo/chart-area-demo.js"></script>
+    <script src="../assets/demo/chart-bar-demo.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.js"></script>
+    <script src="../assets/demo/datatables-demo.js"></script>
+    <script src="../assets/demo/chart-pie-demo.js"></script>
+  </body>
+  
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" href="../css/style.css">
+    <title>SIDAK | Perawatan</title>
+  </head>
+  <style>
+    .banner {
+  height: 80vh;
+  background-image: url(../img/navbar2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+  </style>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand fs-1 fw-bold" href="../index.html">SIDAK</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item ms-5 mx-3">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="../bimkemas/bimkemas.html">Pembinaan</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="perawatan.html">Perawatan</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="../penerimaan/penerimaan.html">Penerimaan</a>
+            </li>
+          </ul>
+          <form class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+              <img src="../logo1.png" alt="Avatar" width="40" class="rounded-pill img-thumbnail">
+              LPKA Ternate
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Ubah Password</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir Navbar -->
+
+    <div class="container-fluid banner">
+      <div class="container banner-content">
+        <div>
+          <h5 class="text-sm-start mt-4">PERAWATAN - SISTEM INFORMASI DATA ANAK </h5>
+          <p> Selamat Datang Di Sistem Informasi Data Anak LPKA Kelas II Ternate <br>
+              Perawatan Anak berfungsi untuk menjaga agar Anak selalu dalam keadaan sehat Jasmani maupun Rohani.
+              Setiap Anak yang ditempatkan di LPKA, sejak diterima sampai dengan dibebaskan harus selalu diberikan
+              perawatan yang layak baik berupa pemberian makan dan minum, perawatan kesehatan dan pemberian Perlengkapan
+              yang dibutuhkan.
+          </p>
+        </div>
+      </div>
+
+    <!-- card -->
+
+    <div class="container card mt-1">
+      <div class="container-bimkes">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-header fw-bold fs-5">
+                Pengelolaan Makanan dan Minuman
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Pengelolaan Makanan dan Minumnan</h5>
+                <p class="card-text">Setiap Anak berhak mendapatkan makan dan minum sesuai dengan 
+                  jumlah kalori yang memenuhi syarat kesehatan.</p>
+                <a href="mamin.html" class="btn btn-primary">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-header fw-bold fs-5">
+                Pendistribusian Perlengkapan
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Pendistribusian Perlengkapan</h5>
+                <p class="card-text">Setiap Anak wajib diberikan perlengkapan yang dapat memenuhi 
+                  kebutuhan mereka selama berada di LPKA. Perlengkapan tersebut 
+                  meliputi pakaian, perlengkapan makan, minum, mandi, rekreasi, 
+                  tidur, ibadah, dan pendidikan.</p>
+                <a href="perlengkapan.html" class="btn btn-primary">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-header fw-bold fs-5">
+                Pelayanan Kesehatan
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Pelayanan Kesehatan</h5>
+                <p class="card-text">Berdasarkan lingkupnya, pemeriksaan kesehatan Anak meliputi 
+                  pemeriksanaan kesehatan awal, pemeriksaan rutin selama berada di 
+                  LPKA, pemeriksaan kesehatan Anak yang akan bebas, pemeriksaan 
+                  kesehatan Anak yang akan keluar untuk kepentingan tertentu, dan 
+                  pemeriksaan kesehatan terhadap Anak yang meninggal dunia.</p>
+                <a href="kesehatan.html" class="btn btn-primary">View Details</a>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-sm-3">
+            <div class="card">
+              <div class="card-header fw-bold fs-5">
+                Inovasi Layanan
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Inovasi Layanan</h5>
+                <p class="card-text">Merupakan inovasi layanan bidang kesehatan seperti SULING (suster keliling)</p>
+                <a href="inovasi.html" class="btn btn-primary">View Details</a>
+              </div>
+            </div>
+          </div> -->
+        
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- akhir card -->
+
+      <!-- footer -->
+        <footer class="footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-6">
+                      2022 &copy; Lpka Ternate
+                  </div>
+                  <div class="col-sm-6"> 
+                      <div class="text-sm-end d-none d-sm-block">
+                          Crafted by Hasanudin.r
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+<!-- akhir footer -->
+      
+    
+      
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="../assets/demo/chart-area-demo.js"></script>
+    <script src="../assets/demo/chart-bar-demo.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.js"></script>
+    <script src="../assets/demo/datatables-demo.js"></script>
+    <script src="../assets/demo/chart-pie-demo.js"></script>
+  </body>
+  
+</html>

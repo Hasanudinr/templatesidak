@@ -1,0 +1,63 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: #002a47;
+}
+
+.navbar {
+  background-color: #218cc1;
+}
+
+.img-thumbnail {
+  padding: 0px;
+  border-image-width: 0px;
+}
+
+.banner-content {
+  color: white;
+  display: flex;
+  justify-content: start;
+}
+
+.card-header {
+  background-color: #218cc1;
+  color: white;
+}
+.card-title {
+  color: #000000;
+}
+
+.card-text {
+  color: #000000;
+}
+
+.card-body a {
+  background-color: #218cc1;
+}
+
+.footer {
+  background-color: #002a47;
+  color: white;
+  margin-top: 20px;
+}
+
+.card-footer a {
+  background-color: #002a47;
+  color: white;
+}
+
+.card-bimkes {
+  background-color: #218cc1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  color: white;
+}
+
+.container-bimkes {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}

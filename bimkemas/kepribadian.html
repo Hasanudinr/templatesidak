@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" href="../css/style.css">
+    <title>SIDAK | Kepribadian</title>
+  </head>
+  <style>
+    .banner {
+  height: 80vh;
+  background-image: url(../img/navbar2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+  </style>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand fs-1 fw-bold" href="../index.html">SIDAK</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item ms-5 mx-3">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="bimkemas.html">Pembinaan</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="../perawatan/perawatan.html">Perawatan</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="../penerimaan/penerimaan.html">Penerimaan</a>
+            </li>
+          </ul>
+          <form class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+              <img src="../logo1.png" alt="Avatar" width="40" class="rounded-pill img-thumbnail">
+              LPKA Ternate
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Ubah Password</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir Navbar -->
+
+    <div class="container-fluid banner">
+      <div class="container banner-content">
+        <div>
+          <h5 class="text-sm-start mt-4">KEPRIBADIAN - SISTEM INFORMASI DATA ANAK </h5>
+          <p> Selamat Datang Di Sistem Informasi Data Anak LPKA Kelas II Ternate <br>
+            Pembinaan Kepribadian terdiri dari kegiatan Pembinaan kerohanian, kesadaran hukum, jasmani, 
+            kesadaran berbangsa dan bernegara dan kegiatan lainnya.
+          </p>
+        </div>
+      </div>
+
+    <!-- slide foto -->
+
+    <div class="container card mt-4">
+      <div class="container-bimkes">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-header fw-bold fs-5">
+                Pembinaan Kerohanian Muslim
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Jumlah Anak : 20 Orang</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-header fw-bold fs-5">
+                Pembinaan Kerohanian Non Muslim
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Jumlah Anak : 6 Orang</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-header fw-bold fs-5">
+                Pembinaan Jasmani
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Jumlah Anak : 26 Orang</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-header fw-bold fs-5">
+                Pembinaan Kepramukaan
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Jumlah Anak : 26 Orang</h5>
+              </div>
+            </div>
+          </div>
+
+
+
+          <p class="fs-4 text-center mt-4">DOKUMENTASI KEGIATAN KEPRIBADIAN</p><hr>
+          <!-- slide 1 -->
+          <div class="col-sm-6" style="padding-block: 10px;">
+            <div id="muslim" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#muslim" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#muslim" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#muslim" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/2.jpg" class="d-block w-100" style="height: 350px;">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Kerohanian Muslim</h5>
+                    <p>Tata Cara Berwudhu</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/3.jpg" class="d-block w-100" style="height: 350px;">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Kerohanian Muslim</h5>
+                    <p>Baca Tulis Al-Quran</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/4.jpg" class="d-block w-100 " style="height: 350px;">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Kerohanian Muslim</h5>
+                    <p>Tata Cara Sholat</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#muslim" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#muslim" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <!-- akhir slide 1 -->
+
+          <!-- slide 2 -->
+          <div class="col-sm-6" style="padding-block: 10px;">
+            <div id="nonmuslim" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#nonmuslim" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#nonmuslim" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#nonmuslim" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/5.jpg" class="d-block w-100" style="height: 350px;">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Kerohanian Non Muslim</h5>
+                    <p>Kebaktian</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/6.jpg" class="d-block w-100" style="height: 350px;">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Kerohanian Non Muslim</h5>
+                    <p>Kebaktian</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/7.jpg" class="d-block w-100 " style="height: 350px;">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Kerohanian Non Muslim</h5>
+                    <p>Kebaktian</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#nonmuslim" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#nonmuslim" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <!-- akhir slide 2 -->
+
+          <!-- slide 3 -->
+          <div class="col-sm-6" style="padding-block: 10px;">
+            <div id="jasmani" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#jasmani" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#jasmani" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#jasmani" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/8.jpg" class="d-block w-100" style="height: 350px;">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Jasmani</h5>
+                    <p>Jumat Sehat</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/9.jpg" class="d-block w-100" style="height: 350px;">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Jasmani</h5>
+                    <p>Jumat Sehat</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/10.jpg" class="d-block w-100 " style="height: 350px;">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Jasmani</h5>
+                    <p>Jumat Sehat</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#jasmani" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#jasmani" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <!-- akhir slide 3 -->
+
+          <!-- slide 4 -->
+          <div class="col-sm-6" style="padding-block: 10px;">
+            <div id="kepramukaan" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#kepramukaan" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#kepramukaan" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#kepramukaan" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/11.jpg" class="d-block w-100" style="height: 350px;">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Kepramukaan</h5>
+                    <p>Jambore Pemasyarakatan Anak di Tangerang</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/12.jpg" class="d-block w-100" style="height: 350px;">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Kepramukaan</h5>
+                    <p>Jambore Pemasyarakatan Anak di Tangerang</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/13.jpg" class="d-block w-100 " style="height: 350px;">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Kepramukaan</h5>
+                    <p>Jambore Pemasyarakatan Anak di Tangerang</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#kepramukaan" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#kepramukaan" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <!-- akhir slide 4 -->
+
+        </div>
+        <!-- akhir slide foto -->
+      </div>
+    </div>
+    
+
+    <!-- akhir card -->
+
+      <!-- footer -->
+        <footer class="footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-6">
+                      2022 &copy; Lpka Ternate
+                  </div>
+                  <div class="col-sm-6"> 
+                      <div class="text-sm-end d-none d-sm-block">
+                          Crafted by Hasanudin.r
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+<!-- akhir footer -->
+      
+    
+      
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="../assets/demo/chart-area-demo.js"></script>
+    <script src="../assets/demo/chart-bar-demo.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.js"></script>
+    <script src="../assets/demo/datatables-demo.js"></script>
+    <script src="../assets/demo/chart-pie-demo.js"></script>
+  </body>
+  
+</html>
